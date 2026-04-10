@@ -22,7 +22,7 @@ export default function ContactSection() {
 
           <div className="mt-8 space-y-5">
             {[
-              { icon: "✉️", label: "Email", value: "sulove@shrestha.com" },
+              { icon: "✉️", label: "Email", value: "sulove.shrest07@gmail.com" },
               { icon: "📍", label: "Location", value: "Nepal" },
               { icon: "🔗", label: "LinkedIn", value: "linkedin.com/in/suloveshrestha" },
             ].map((item) => (
