@@ -57,11 +57,6 @@ jobs:
           # In static hosting, this bootstrap call can throw invariant errors.
           # Remove it so the client runs as a plain SPA on GitHub Pages.
           perl -0pi -e 's/a\.stores\.matchesId\.get\(\)\.length\|\|await Ux\(a\),a/a/g' "$JS_ENTRY"
-          # Normalize image asset URLs to absolute project paths.
-          # Some chunks resolve `assets/...` relative to `/assets/` and produce `/assets/assets/...`.
-          for f in dist/client/assets/index-*.js; do
-            perl -0pi -e 's#(?<=[\"\x27])assets/([A-Za-z0-9._-]+\.(?:png|jpe?g|svg))(?=[\"\x27])#/git-basics/assets/$1#g' "$f"
-          done
           CSS_BASENAME=$(basename "$CSS_FILE")
           JS_BASENAME=$(basename "$JS_ENTRY")
           BUILD_ID="${GITHUB_SHA:-$(date +%s)}"

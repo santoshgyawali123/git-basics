@@ -4,12 +4,6 @@
   - Keep every block `id` and `type` stable.
 */
 
-import aboutPhoto from "@/assets/sulove-profile.jpeg";
-import contactClipart from "@/assets/contact-clipart.png";
-import heroClipart from "@/assets/hero-clipart.png";
-import servicesClipart from "@/assets/services-clipart.png";
-import skillsClipart from "@/assets/skills-clipart.png";
-
 import type { PortfolioConfig } from "./portfolio.schema";
 
 export const portfolioConfig: PortfolioConfig = {
@@ -71,7 +65,7 @@ export const portfolioConfig: PortfolioConfig = {
         href: "#services",
       },
       image: {
-        src: heroClipart,
+        src: "/git-basics/images/hero-clipart.png",
         alt: "Digital marketing professional with social media and analytics icons",
         width: 1024,
         height: 1024,
@@ -87,7 +81,7 @@ export const portfolioConfig: PortfolioConfig = {
         "My focus is on delivering data-driven results that make a real impact — growing audiences, increasing conversions, and building brand authority across all digital channels.",
       ],
       image: {
-        src: aboutPhoto,
+        src: "/git-basics/images/sulove-profile.jpeg",
         alt: "Sulove Shrestha - Senior Digital Marketing Officer",
         width: 500,
         height: 600,
@@ -118,7 +112,7 @@ export const portfolioConfig: PortfolioConfig = {
         { name: "Marketing Automation", level: 82 },
       ],
       image: {
-        src: skillsClipart,
+        src: "/git-basics/images/skills-clipart.png",
         alt: "Achievement and skills illustration",
         width: 800,
         height: 800,
@@ -164,7 +158,7 @@ export const portfolioConfig: PortfolioConfig = {
         },
       ],
       image: {
-        src: servicesClipart,
+        src: "/git-basics/images/services-clipart.png",
         alt: "Digital marketing tools",
         width: 800,
         height: 800,
@@ -220,7 +214,7 @@ export const portfolioConfig: PortfolioConfig = {
         { icon: "🔗", label: "LinkedIn", value: "linkedin.com/in/suloveshrestha", href: "https://linkedin.com/in/suloveshrestha" },
       ],
       image: {
-        src: contactClipart,
+        src: "/git-basics/images/contact-clipart.png",
         alt: "Contact and communication illustration",
         width: 800,
         height: 800,
