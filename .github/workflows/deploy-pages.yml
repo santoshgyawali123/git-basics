@@ -56,18 +56,22 @@ jobs:
           perl -0pi -e 's/basepath:"",serializationAdapters/basepath:"\/git-basics\/",serializationAdapters/g; s/basepath:"\/",scrollRestoration/basepath:"\/git-basics\/",scrollRestoration/g' "$JS_ENTRY"
           CSS_BASENAME=$(basename "$CSS_FILE")
           JS_BASENAME=$(basename "$JS_ENTRY")
+          BUILD_ID="${GITHUB_SHA:-$(date +%s)}"
           cat > dist/client/index.html <<EOF
           <!doctype html>
           <html lang="en">
             <head>
               <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+              <meta http-equiv="Pragma" content="no-cache" />
+              <meta http-equiv="Expires" content="0" />
               <title>Portfolio</title>
-              <link rel="stylesheet" href="/git-basics/assets/${CSS_BASENAME}" />
+              <link rel="stylesheet" href="/git-basics/assets/${CSS_BASENAME}?v=${BUILD_ID}" />
             </head>
             <body>
               <div id="root"></div>
-              <script type="module" src="/git-basics/assets/${JS_BASENAME}"></script>
+              <script type="module" src="/git-basics/assets/${JS_BASENAME}?v=${BUILD_ID}"></script>
             </body>
           </html>
           EOF
