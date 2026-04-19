@@ -20,8 +20,8 @@ const withBase = (path: string) => {
 
 // Quick-edit section: update these values first for most profile/theme changes.
 const profile = {
-  name: "Sagun",
-  role: "Full Stack Developer",
+  name: "Santosh Gyawali",
+  role: "Civil Engineer, MSc Infrastructure Engineering and Management",
   location: "Nepal",
   email: "hello@sagun.dev",
   linkedin: "linkedin.com/in/sagun",
@@ -36,9 +36,9 @@ const socialLinks = {
 
 // Single source of truth for brand hue.
 // Change this one value to retheme all accent-driven UI parts.
-// Switched to a bluish-white direction per user request.
-const brandColor = "oklch(0.62 0.24 25)";
-const brandTextOnColor = "oklch(0.99 0.01 20)";
+// Professional purple theme for civil engineering portfolio.
+const brandColor = "oklch(0.5 0.15 310)";
+const brandTextOnColor = "oklch(0.98 0.02 310)";
 
 const themeColors = {
   // Keep overrides minimal: all other tokens are derived from these in styles.css.
@@ -76,9 +76,9 @@ export const portfolioConfig: PortfolioConfig = {
     },
   },
   seo: {
-    title: `${profile.name} | Developer Portfolio`,
+    title: `${profile.name} | Civil Engineer Portfolio`,
     description:
-      "Full Stack Developer building clean, performant web applications and digital products.",
+      "Civil Engineer specializing in infrastructure engineering and management with MSc qualifications.",
     author: profile.name,
     twitterSite: profile.twitterHandle,
     ogImage:
@@ -96,7 +96,7 @@ export const portfolioConfig: PortfolioConfig = {
       headingPrefix: "Hi, I'm",
       headingHighlight: profile.name,
       description:
-        "I build fast, scalable web applications with modern frontend and backend technologies.",
+        "Civil Engineer with MSc in Infrastructure Engineering and Management, specializing in sustainable infrastructure development and project management.",
       primaryCta: {
         label: "Let's Connect",
         href: "#contact",
@@ -118,8 +118,8 @@ export const portfolioConfig: PortfolioConfig = {
       title: "About",
       titleHighlight: "Me",
       paragraphs: [
-        "I'm a developer focused on creating reliable, user-friendly applications with clean architecture and strong performance.",
-        "I enjoy turning ideas into products, from UI development to backend APIs, while keeping code maintainable and scalable.",
+        "I'm a civil engineer with an MSc in Infrastructure Engineering and Management, dedicated to designing and managing sustainable infrastructure projects.",
+        "I specialize in infrastructure planning, project management, and engineering solutions that contribute to community development and environmental sustainability.",
       ],
       image: {
         src: withBase("/images/sulove-profile.jpeg"),
@@ -129,10 +129,10 @@ export const portfolioConfig: PortfolioConfig = {
       },
       nameTag: profile.name,
       stats: [
-        { value: "4+", label: "Years Experience" },
-        { value: "30+", label: "Projects Built" },
-        { value: "15+", label: "Happy Clients" },
-        { value: "99%", label: "Delivery Rate" },
+        { value: "5+", label: "Years Experience" },
+        { value: "20+", label: "Projects Completed" },
+        { value: "10+", label: "Certifications" },
+        { value: "100%", label: "Quality Standards" },
       ],
     },
     {
