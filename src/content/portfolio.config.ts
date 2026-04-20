@@ -36,9 +36,9 @@ const socialLinks = {
 
 // Single source of truth for brand hue.
 // Change this one value to retheme all accent-driven UI parts.
-// Professional purple theme for civil engineering portfolio.
-const brandColor = "oklch(0.5 0.15 310)";
-const brandTextOnColor = "oklch(0.98 0.02 310)";
+// Professional blue theme for civil engineering portfolio.
+const brandColor = "oklch(0.5 0.15 240)";
+const brandTextOnColor = "oklch(0.98 0.02 240)";
 
 const themeColors = {
   // Keep overrides minimal: all other tokens are derived from these in styles.css.
